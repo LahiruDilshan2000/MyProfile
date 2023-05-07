@@ -3,94 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="assets/styles/Styles.css">
 </head>
 <body>
 <!--navigation bar-->
 <header>
-    <nav>
-        <!--        navigation table-->
-        <table border="1" width="100%">
-            <tbody>
-            <tr>
-                <td width="800" height="5">
-                    logo
-                </td>
-                <td>
-                    <h6>01.</h6>
-                </td>
-                <td>
-                    <a href="#tblIntro"><h4>Intro</h4></a>
-                </td>
-                <td>
-                    <h6>02.</h6>
-                </td>
-                <td>
-                    <a href="#tblAboutMe"><h4>About</h4></a>
-                </td>
-                <td>
-                    <h6>03.</h6>
-                </td>
-                <td>
-                    <a href="#tblWhatIDo"><h4>What I Do</h4></a>
-                </td>
-                <td>
-                    <h6>04.</h6>
-                </td>
-                <td>
-                    <a href="#tblSkill"><h4>Skills</h4></a>
-                </td>
-                <td>
-                    <h6>05.</h6>
-                </td>
-                <td>
-                    <a href="#tblEducation"><h4>Education</h4></a>
-                </td>
-                <td>
-                    <h6>06.</h6>
-                </td>
-                <td>
-                    <a href="#tblActivities"><h4>Activities</h4></a>
-                </td>
-                <td>
-                    <h6>07.</h6>
-                </td>
-                <td>
-                    <a href="#tblWorks"><h4>Works</h4></a>
-                </td>
-                <td>
-                    <h6>08.</h6>
-                </td>
-                <td>
-                    <a href="#tblContact"><h4>Say Hi</h4></a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+    <nav id="navbar">
+        <a href="#" class="logo" id="logo">LOGO</a>
+        <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#WhatIDo">What I Do</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Activities">Activities</a></li>
+            <li><a href="#Works">Works</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
     </nav>
 </header>
-<!--intro  table-->
-<table border="1" width="100%" id="tblIntro">
-    <tbody>
-    <tr ro>
-        <td height="500">
-            <center>
-                <h2>Frontend Developer & Software Engineer</h2>
-                <h4>I design and code beautifully simple things, and I love what I do.</h4>
-            </center>
-        </td>
-    </tr>
-    <tr>
-        <td height="150">
-            <center>
-                <h5>LEARN MORE</h5>
-                icon
-            </center>
-        </td>
-    </tr>
-    </tbody>
-</table>
-<br><br>
+<!--<script type="text/javascript">-->
+<!--    var lastScrollTop = 0;-->
+<!--    navbar = document.getElementById("navbar");-->
+<!--    window.addEventListener("scroll", function () {-->
+<!--        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;-->
+<!--        if (scrollTop > lastScrollTop) {-->
+<!--            navbar.style.top = "-60px";-->
+<!--        } else {-->
+<!--            if(scrollTop < lastScrollTop){-->
+<!--                navbar.style.top = "-60px";-->
+<!--            }-->
+<!--            navbar.style.top = "0"-->
+<!--        }-->
+<!--        lastScrollTop = scrollTop;-->
+<!--    })-->
+<!--</script>-->
+<!--intro-->
+<div class="intro" id="intro">
+    <div class="int"></div>
+    <h1 class="main-font-1">Frontend Developer & Software Engineer</h1>
+    <h4 class="main-font-2">I design and code beautifully simple things, and I love what I do.</h4>
+    <h5 class="main-font-3">LEARN MORE</h5>
+    <div class="cir"></div>
+    <div class="tir"></div>
+    <button type="button" class="slide"></button>
+</div>
 <!--about me table 1-->
+<div class="about">
+
+</div>
 <table border="1" width="100%" id="tblAboutMe">
     <tbody>
     <tr>
@@ -181,9 +142,9 @@
         </td>
         <td>
             <section>
-              <p>
-                  Ui Ux Design
-              </p>
+                <p>
+                    Ui Ux Design
+                </p>
                 <p>
                     I like to design clean and beautiful user<br>
                     interface and user experience.
