@@ -33,26 +33,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
 <!--navigation bar-->
-
-    <header id="header">
-        <nav>
-            <a href="#" class="logo" id="logo">logo</a>
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#WhatIDo">What I Do</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Activities">Activities</a></li>
-                <li><a href="#Works">Works</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="toggle" onclick="toggle()"></div>
-    </header>
+<header id="header">
+    <nav>
+        <a href="#" class="logo" id="logo">logo</a>
+        <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#WhatIDo">What I Do</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Activities">Activities</a></li>
+            <li><a href="#Works">Works</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="toggle" onclick="toggle()"></div>
+</header>
 <section id="navigation">
     <ul>
         <li data-text="Home"><a href="#intro">Intro</a></li>
@@ -68,11 +74,12 @@
 <main id="section">
     <!--intro-->
     <section class="intro" id="intro">
-        <!--<div class="intro-content">-->
         <div class="intro-content">
-            <h1 class="intro-h1">Frontend Developer & Software Engineer</h1>
-<!--            <div class="line"></div>-->
-            <h4 class="intro-h4">I design and code beautifully simple things, and I love what I do.</h4>
+            <h1 class="intro-h1 animate__animated animate__bounce animate__fadeInUp">Frontend Developer & Software
+                Engineer</h1>
+            <h4 class="intro-h4" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="800">I design and code beautifully simple things, and I love what I do.</h4>
             <h5>LEARN MORE</h5>
             <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
         </div>
@@ -80,8 +87,8 @@
     <!--about me -->
 
     <section class="about">
-        <div class="content-box">
-            <h1 class="about-heading">About Me.</h1>
+        <div data-aos="zoom-out-right" class="content-box">
+            <h1 class="about-heading ">About Me.</h1>
             <p class="about-p1">I'm a student at Institute of Software Engineering (IJSE).
             <p class="about-p2">My expertise encompasses a wide range of technical skills
                 including Java programming, database management systems,
@@ -89,12 +96,59 @@
                 I am particularly passionate about the cutting-edge field of
                 web and mobile app development.</p>
         </div>
-        <div class="img-box">
+        <div data-aos="zoom-out-left" class="img-box">
 
         </div>
     </section>
 
     <!--    service -->
+    <section class="service">
+        <div class="service-header-box">
+            <h1 class="service-header">What about I do.</h1>
+        </div>
+        <div class="service-box">
+<!--            <div class="s-container">-->
+                <div class="s-card">
+                    <div class="s-card-img">
+                        <i class="fa-brands fa-battle-net"></i>
+                    </div>
+                    <div class="s-card-content">
+                        <h3>Web Developing</h3>
+                        <p>I like to code things from scratch, and enjoy
+                            bringing ideas to life in the browser.</p>
+                        <h3>Languages I speak:</h3>
+<!--                        <p>HTML , CSS, JavaScript</p>-->
+                    </div>
+                </div>
+<!--            </div>-->
+            <div class="s-card">
+                <div class="s-card-img">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="s-card-content">
+                    <h3>Ui Ux Design</h3>
+                    <p>I like to design clean and beautiful user <br>
+                        interface and user experience.</p>
+                    <h3>Languages I speak:</h3>
+                    <p>Java, JavaFx, Figma</p>
+                </div>
+            </div>
+<!--            -->
+            <div class="s-card">
+                <div class="s-card-img">
+                    <i class="fa-brands fa-laravel"></i>
+                </div>
+                <div class="s-card-content">
+                    <h3>Back End Developing</h3>
+                    <p>I like to maintain the mechanisms that process
+                        data and perform actions on websites.</p>
+                    <h3>Languages I speak:</h3>
+                    <p>Java, SQL, MongoDB </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="service">
         <div class="service-header-box">
@@ -148,49 +202,49 @@
                 <div class="progress-line java"><span></span></div>
             </div>
 
-            <div class="bar">
+            <div class="hidden-bar">
                 <div class="info">
                     <span>JavaFx</span>
                 </div>
                 <div class="progress-line javafx"><span></span></div>
             </div>
-            <div class="bar">
+            <div class="hidden-bar">
                 <div class="info">
                     <span>Figma</span>
                 </div>
                 <div class="progress-line figma"><span></span></div>
             </div>
-            <div class="bar">
+            <div class="hidden-bar">
                 <div class="info">
                     <span>Java</span>
                 </div>
                 <div class="progress-line java"><span></span></div>
             </div>
-            <div class="bar">
+            <div class="hidden-bar">
                 <div class="info">
                     <span>SQL</span>
                 </div>
                 <div class="progress-line sql"><span></span></div>
             </div>
-            <div class="bar">
+            <div class="hidden-bar">
                 <div class="info">
                     <span>HTML</span>
                 </div>
                 <div class="progress-line html"><span></span></div>
             </div>
-            <div class="bar">
+            <div class="hidden-bar">
                 <div class="info">
                     <span>CSS</span>
                 </div>
                 <div class="progress-line css"><span></span></div>
             </div>
-            <div class="bar">
+            <div class="hidden-bar">
                 <div class="info">
                     <span>JavaScript</span>
                 </div>
                 <div class="progress-line javascript"><span></span></div>
             </div>
-            <div class="skills-img-box">
+            <div class="skills-img-box hidden-bar">
                 <img src="assets/icons/icons8-java-64.png" alt="">
                 <img src="assets/icons/icons8-scene-builder-64.png" alt="">
                 <img src="assets/icons/icons8-figma-48.png" alt="">
@@ -211,7 +265,233 @@
         <div class="act-header-box">
             <h1 class="act-header">Activities</h1>
         </div>
+        <div class="act-card-box">
+            <div class="act-card">
+                <div class="act-card-img"></div>
+            </div>
+            <div class="act-card"></div>
+            <div class="act-card"></div>
+            <div class="act-card"></div>
+        </div>
     </section>
+
+    <section class="project">
+        <div class="p-header-box">
+            <h1 class="p-header">Projects</h1>
+        </div>
+        <div class="p-box">
+            <!--------------------------project tc computer----------------------------->
+            <div class="p-c-container" data-aos="fade-up" data-aos-duration="500">
+                <!-------------------------------------->
+                <div data-card="4" class="p-card">
+                    <div class="p-img">
+                        <img src="assets/images/image1.png" alt="image">
+                    </div>
+                    <div class="p-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------->
+                <div data-card="3" class="p-card">
+                    <div class="p-img">
+                        <img src="assets/images/Annotation%202023-02-17%20113436.png" alt="image">
+                    </div>
+                    <div class="p-details">
+                        <h3>Log in</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------->
+                <div data-card="2" class="p-card">
+                    <div class="p-img">
+                        <img src="assets/images/Annotation%202023-02-17%20113856.png" alt="image">
+                    </div>
+                    <div class="p-details">
+                        <h3>Reception</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------->
+                <div data-card="1" class="p-card">
+                    <div class="p-img">
+                        <img src="assets/images/Annotation%202023-02-17%20113931.png" alt="image">
+                    </div>
+                    <div class="p-details">
+                        <h3>Customer management</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------->
+                <div data-card="0" class="p-card">
+                    <div class="p-img">
+                        <img src="assets/images/Annotation%202023-02-17%20114045.png" alt="image">
+                    </div>
+                    <div class="p-details">
+                        <h3>Admin dashboard</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------------------------->
+<!-------------------------------d24 hotel------------------------------------------------------>
+            <div class="p2-c-container" data-aos="fade-up" data-aos-duration="700">
+                <!-------------------------------------->
+                <div data-card="4" class="p2-card">
+                    <div class="p2-img">
+                        <img src="assets/images/D24_Hotel_dash.png" alt="image">
+                    </div>
+                    <div class="p2-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p2-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="3" class="p2-card">
+                    <div class="p2-img">
+                        <img src="assets/images/D24_Hotel_login.png" alt="image">
+                    </div>
+                    <div class="p2-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p2-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="2" class="p2-card">
+                    <div class="p2-img">
+                        <img src="assets/images/D24_Hotel_st_management.png" alt="image">
+                    </div>
+                    <div class="p2-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p2-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="1" class="p2-card">
+                    <div class="p2-img">
+                        <img src="assets/images/D24_Hotel_roo_Management.png" alt="image">
+                    </div>
+                    <div class="p2-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p2-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="0" class="p2-card">
+                    <div class="p2-img">
+                        <img src="assets/images/D24_Hotel_rece_details.png" alt="image">
+                    </div>
+                    <div class="p2-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p2-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------------------------->
+            <!---------------------------------web-pos-system---------------------------------------->
+            <div class="p3-c-container" data-aos="fade-up" data-aos-duration="900">
+                <!-------------------------------------->
+                <div data-card="4" class="p3-card">
+                    <div class="p3-img">
+                        <img src="assets/images/Web_Pos_system_dash.png" alt="image">
+                    </div>
+                    <div class="p3-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p3-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="3" class="p3-card">
+                    <div class="p3-img">
+                        <img src="assets/images/Web_Pos_system_cus_management.png" alt="image">
+                    </div>
+                    <div class="p3-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p3-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="2" class="p3-card">
+                    <div class="p3-img">
+                        <img src="assets/images/Web_Pos_system_item_management.png" alt="image">
+                    </div>
+                    <div class="p3-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p3-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="1" class="p3-card">
+                    <div class="p3-img">
+                        <img src="assets/images/Web_Pos_system_order.png" alt="image">
+                    </div>
+                    <div class="p3-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p3-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-------------------------------------------------------------->
+                <div data-card="0" class="p3-card">
+                    <div class="p3-img">
+                        <img src="assets/images/D24_Hotel_rece_details.png" alt="image">
+                    </div>
+                    <div class="p3-details">
+                        <h3>Tc Computer Management System .</h3>
+                        <p>Java ,JavaFX ,CSS ,MySql</p>
+                    </div>
+                    <div class="p3-card-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/lib/jquery-3.6.4.min.js"></script>
+    <script src="assets/script/ProjectScript.js"></script>
+
     <script type="text/javascript">
 
         window.addEventListener("scroll", function () {
@@ -254,14 +534,20 @@
             });
         });
 
-        const hiddenElement = document.querySelectorAll('.hidden');
-
-        const hiddenElement1 = document.querySelectorAll('.hidden-bar');
-
-        hiddenElement1.forEach((el) => observer.observe(el));
+        const hiddenElement = document.querySelectorAll('.hidden-bar');
 
         hiddenElement.forEach((el) => observer.observe(el));
+
+        /////////////////////////////////////////////////////////////////////////
+
+
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </main>
+
 </body>
 </html>
