@@ -1,0 +1,101 @@
+.service{
+    padding: 100px;
+    text-align: center;
+}
+.service-header{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #7E7E7E;
+    text-transform: uppercase;
+}
+.service-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    /*padding: 0px 90px;*/
+    position: relative;
+    justify-content:  center;
+}
+.s-card{
+    position: relative;
+    width: 360px;
+    height: 210px;
+    color: #7E7E7E;
+    background-color:  #DEF2F1;
+    /*border: 1px solid #00ADB5;*/
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.s-card .s-card-img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+    backdrop-filter: blur(20px);
+}
+.s-card .s-card-img i{
+    font-size: 4em;
+}
+.s-card .s-card-img .fa-battle-net{
+    background-color: #ff1414;
+    background-image: linear-gradient(45deg, #ff1414 0%, #d68476 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s-card .s-card-img .fa-react{
+    background-color: #74ebd5;
+    background-image: linear-gradient(45deg, #74ebd5 0%, #9face6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s-card .s-card-img .fa-laravel{
+    background-color: #ff1414;
+    background-image: linear-gradient(45deg, #ff1414 0%, #d68476 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.s-card:hover .s-card-img{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    border-radius: 50%;
+    top: calc(50% - 75px);
+}
+.s-card .s-card-content{
+    text-align: left;
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+}
+.s-card .s-card-content h3{
+    font-size: 1em;
+    margin: 10px 0 0 0;
+    font-weight: 500;
+}
+.s-card .s-card-content p{
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.s-card .s-card-content p:last-child{
+    font-size: 0.7em;
+    font-weight: 300;
+    margin-top: 20px;
+}

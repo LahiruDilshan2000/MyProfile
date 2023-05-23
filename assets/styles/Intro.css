@@ -1,0 +1,319 @@
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-color: #49c5b6;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.intro-head{
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+}
+.intro-head h1{
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    margin: 100px 50px 4px 0;
+    color: #fff;
+    letter-spacing: 7px;
+}
+.intro-head h1:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #49c5b6,transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+    opacity: 0;
+    animation: animation1 4s linear infinite;
+}
+@keyframes animation1 {
+    100%{
+        left: calc(100% + 100px);
+        transition: 0.1s;
+        transition-delay: 0.2s;
+        opacity: 1;
+    }
+}
+.intro-head-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro-head-content h3{
+    font-size: 1.2em;
+    color: #0c2461;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.intro-head-content i{
+    font-size: 0.6em;
+    margin-right: 15px;
+    color: #0c2461;
+    transform: rotate(45deg);
+}
+.line{
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.intro-content{
+    width: 50%;
+    height: fit-content;
+    padding : 100px 50px 100px 200px  ;
+}
+.intro-content p{
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.circle-container{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+}
+.circle-1{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px dotted #fff;
+    border-spacing: 20px;
+    box-sizing: border-box;
+    font-weight: 300;
+    animation: animationCircle1 25s linear infinite;
+    opacity: 0.2;
+}
+.circle-1:after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px dotted #fff;
+    position: absolute;
+    top: 80px;
+    animation: animationCircle2 3s linear infinite;
+    opacity: 1 !important;
+}
+.circle-1:before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 165px;
+    right: 0;
+    animation: animationCircle3 1s alternate-reverse infinite;
+}
+.circle-2{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 5px dotted #fff;
+    border-spacing: 20px;
+    box-sizing: border-box;
+    animation: animationCircle2 50s linear infinite;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0.3;
+}
+.circle-2:after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px dotted #fff;
+    position: absolute;
+    top: 50px;
+    animation: animationCircle2 3s linear infinite;
+}
+.circle-2:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 150px;
+    right: 2px;
+    animation: animationCircle3 1s alternate-reverse infinite;
+}
+.circle-3{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: linear-gradient(#fff 2%,transparent 2%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: animationCircle1 10s linear infinite;
+    opacity: 0.4;
+}
+.circle-3:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px dotted #fff;
+    position: absolute;
+    top: 40px;
+    animation: animationCircle2 1s linear infinite;
+}
+.circle-3:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 110px;
+    right: 2px;
+    animation: animationCircle3 1s alternate-reverse infinite;
+}
+.circle-4{
+    width: 79.4%;
+    height: 79.4%;
+    border-radius: 50%;
+    background-color: #49c5b6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: animationCircle2 10s linear infinite;
+}
+.circle-4:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    animation: animationCircle4 1s alternate-reverse infinite;
+}
+@keyframes animationCircle3 {
+    100%{
+        transform: translateX(45px);
+    }
+}
+@keyframes animationCircle4 {
+    0%{
+        opacity: 0.5;
+        width: 35px;
+        height: 20px;
+    }
+    100%{
+        transform: translateY(45px);
+        /*background-color: red;*/
+        opacity: 0.6;
+        width: 20px;
+        height: 30px;
+    }
+}
+.circle-4:after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    opacity: 0.8;
+}
+@keyframes animationCircle1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animationCircle2 {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+#scroll-btn{
+    position: absolute;
+    width: 25px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 12rem;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    margin: auto;
+    text-decoration: none;
+}
+#scroll-btn:after{
+    content: "move";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: -35px;
+    left: -5px;
+    font-weight: 300;
+    cursor: default;
+    opacity: 0;
+    transition: all 0.5s;
+    transition-delay: 0.4s;
+}
+#scroll-btn:hover:after{
+    top: -18px;
+    opacity: 1;
+}
+#scroll-btn:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: move-down 2s infinite;
+    transition: all 1s;
+}
+@keyframes move-down {
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(30px);
+
+    }
+}

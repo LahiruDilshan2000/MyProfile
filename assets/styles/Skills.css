@@ -1,0 +1,165 @@
+.skills{
+    padding: 100px;
+    text-align: center;
+}
+
+.skills-content{
+    width: 100%;
+    padding: 50px 200px 50px 200px;
+    text-align: left;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.skills-header{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #7E7E7E;
+    text-transform: uppercase;
+}
+.skills-content .bar{
+    margin: 10px 0;
+    /*width: 600px;*/
+}
+.skills-content .bar:first-child{
+    margin-top: 0;
+}
+.skills-content .bar .info span{
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0;
+    animation: showText 0.5s 1s forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skills-content .bar .info{
+    margin-bottom: 5px;
+}
+.skills-content .bar .progress-line{
+    position: relative;
+    height: 15px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+    0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress-line.java span{
+    width: 95%;
+    background: #2C87F1;
+}
+.progress-line.javafx span{
+    width: 85%;
+    background: #5098EC;
+}
+.progress-line.figma span{
+    width: 75%;
+    background: #79B1F4;
+}
+.progress-line.java span{
+    width: 95%;
+    background: #2C87F1;
+}
+.progress-line.sql span{
+    width: 75%;
+    background: #82BBFF;
+}
+.progress-line.html span{
+    width: 98%;
+    background: #006EEE;
+}
+.progress-line.css span{
+    width: 95%;
+    background: #2C87F1;
+}
+.progress-line.javascript span{
+    width: 95%;
+    background: #2C87F1;
+}
+.bar .progress-line span::before{
+    /*position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -10px;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s  forwards;*/
+}
+.bar .progress-line span::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.progress-line.java span::after{
+    content: "95%";
+}
+.progress-line.javafx span::after{
+    content: "85%";
+}
+.progress-line.figma span::after{
+    content: "75%";
+}
+.progress-line.java span::after{
+    content: "95%";
+}
+.progress-line.sql span::after{
+    content: "75%";
+}
+.progress-line.html span::after{
+    content: "98%";
+}
+.progress-line.css span::after{
+    content: "95%";
+}
+.progress-line.javascript span::after{
+    content: "95%";
+}
+.skills-img-box{
+    text-align: center;
+}
+.skills-img-box.bar img{
+    width: 35px;
+    padding: 10px 0;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s forwards;
+}
