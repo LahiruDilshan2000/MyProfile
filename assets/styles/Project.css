@@ -1,6 +1,7 @@
 .project{
     padding: 100px;
     text-align: center;
+    background: linear-gradient(150deg, #49c5b6, #69CEC2);
 }
 .p-header{
     padding: 20px 0;
