@@ -112,9 +112,9 @@ i{
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
     display: grid;
     place-items: center;
     transition: 0.5s;
@@ -149,6 +149,9 @@ i{
     opacity: 0.5;
     letter-spacing: 0;
     transition-delay: 0.5s;
+    left: -150px;
+    transform: rotate(270deg);
+    z-index: 2000000;
 }
 #navigation ul li a{
     color: #fff;

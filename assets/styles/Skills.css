@@ -1,5 +1,5 @@
 .skills{
-    padding: 100px;
+    padding: 0 100px;
     text-align: center;
 }
 
@@ -7,14 +7,16 @@
     width: 100%;
     padding: 50px 200px 50px 200px;
     text-align: left;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
 }
 .skills-header{
-    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: end;
+    font-size: 4.5rem;
     letter-spacing: 2px;
-    font-weight: 400;
-    color: #7E7E7E;
-    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 .skills-content .bar{
     margin: 10px 0;

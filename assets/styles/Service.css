@@ -1,13 +1,34 @@
 .service{
     padding: 100px;
     text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #414345, #232526);
 }
 .service-header{
-    font-size: 25px;
+    text-align: start;
+    font-size: 4rem;
     letter-spacing: 2px;
     font-weight: 400;
-    color: #7E7E7E;
-    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+.service-header:before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #49c5b6;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.8;
+    animation: lineAnimation 1s ease-out infinite;
+}
+@keyframes lineAnimation {
+    100%{
+        width: 50%;
+    }
 }
 .service-box{
     width: 100%;
@@ -23,12 +44,12 @@
     position: relative;
     width: 360px;
     height: 210px;
-    color: #7E7E7E;
-    background-color:  #DEF2F1;
-    /*border: 1px solid #00ADB5;*/
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
     margin: 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
 }
 .s-card .s-card-img{
     position: absolute;
@@ -42,8 +63,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
     transition: 0.5s ease-in-out;
     backdrop-filter: blur(20px);
@@ -85,17 +106,23 @@
     padding: 20px;
 }
 .s-card .s-card-content h3{
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     margin: 10px 0 0 0;
     font-weight: 500;
+    color: #49c5b6;
 }
 .s-card .s-card-content p{
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     font-weight: 300;
     margin-top: 20px;
 }
 .s-card .s-card-content p:last-child{
-    font-size: 0.7em;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: bolder;
     margin-top: 20px;
+    color: #ff1414;
+    opacity: 0.7;
 }
