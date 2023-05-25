@@ -10,6 +10,7 @@
     width: 50%;
     height: fit-content;
     text-align: center;
+    z-index: 200;
 }
 .intro-head h1{
     font-size: 5em;
@@ -197,8 +198,8 @@
     animation: animationCircle3 1s alternate-reverse infinite;
 }
 .circle-4{
-    width: 79.4%;
-    height: 79.4%;
+    width: 79.3%;
+    height: 79.3%;
     border-radius: 50%;
     background-color: #49c5b6;
     position: absolute;

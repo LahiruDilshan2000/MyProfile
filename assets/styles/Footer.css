@@ -31,6 +31,7 @@
 
 }
 .f-c-1 ul li{
+    position: relative;
     list-style: none;
     width: 100px;
     padding: 2px 0;
@@ -53,10 +54,24 @@
     text-transform: uppercase;
     opacity: 0.8;
 }
+.f-c-1 ul li a:before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    width: 2px;
+    height: 0;
+    background: #49c5b6;
+    transition: 0.3s ease-in-out;
+}
+
 .f-c-1 ul li a:hover{
     color: #ed213a;
     padding-left: 3px;
 }
+.f-c-1 ul li a:hover:before{
+    height: 100%;
+}
+
 .f-c-1:before{
     content: "";
     width: 1px;
@@ -81,22 +96,41 @@
     padding: 50px 40px 20px 40px;
     color: #fff;
     font-size: 0.8rem;
-    text-align: center;
+    text-align: start;
     font-weight: 300;
     letter-spacing: 2px;
     font-family: 'Open Sans', sans-serif;
     opacity: 0.9;
+    cursor: default;
 }
-.f-c-2-content a{
+.f-c-2-content #mail{
+    position: relative;
     text-decoration: none;
     color: #fff;
     font-size: 0.9rem;
     margin: 20px;
     letter-spacing: 2px;
     font-weight: 300;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
+    background: transparent;
+    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     padding: 10px 20px;
+    z-index: 20;
+}
+.f-c-2-content #mail span{
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 0px solid #49c5b6;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+.f-c-2-content #mail:hover span{
+    width: 100%;
+    border: 1px solid #49c5b6;
 }
 .f-c-2:before{
     content: "";
@@ -124,8 +158,8 @@
     color: #fff;
     letter-spacing: 7px;
     text-align: start;
-    opacity: 0.7;
     cursor: default;
+    opacity: 0.8;
 }
 .footer-content h3{
     font-size: 1em;
@@ -172,12 +206,13 @@
 }
 .f-c-4 > div:first-child h4, .f-c-4 > div:nth-child(2) p, .f-c-4 > div:last-child p{
     color: #fff;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 300;
     padding: 10px;
     letter-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
     opacity: 0.6;
+    cursor: default;
 }
 .f-c-4:before{
     content: "";
@@ -190,4 +225,61 @@
     right: 0;
     margin: auto;
     opacity: 0.1;
+}
+#footer-logo{
+    position: relative;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-decoration: none;
+    cursor: pointer;
+    padding : 10px 30px 10px 0;
+}
+.content-logos ul{
+    position: relative;
+    display: flex;
+}
+.content-logos ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 15px;
+    cursor: pointer;
+}
+.content-logos ul li a{
+    text-decoration: none;
+}
+.content-logos ul li a i{
+    font-size: 1.7rem;
+    color: #686D76;
+}
+.content-logos ul li:before{
+    font-family: FontAwesome;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-size: 1.7rem;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.content-logos ul li:nth-child(1):before{
+    content: '\f39e';
+    color: #49c5b6;
+}
+.content-logos ul li:nth-child(2):before{
+    content: '\f09b';
+    color: #49c5b6;
+}
+.content-logos ul li:nth-child(3):before{
+    content: '\f0e1';
+    color: #49c5b6;
+}
+.content-logos ul li:nth-child(4):before{
+    content: '\f099';
+    color: #49c5b6;
+}
+.content-logos ul li:hover:before{
+    height: 100%;
 }

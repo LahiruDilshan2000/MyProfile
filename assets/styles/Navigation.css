@@ -15,14 +15,15 @@ nav{
     width: 100%;
     position: relative;
 }
-.logo{
+#logo{
     position: relative;
-    font-weight: 700;
+    font-weight: bolder;
     color: #fff;
     font-size: 2em;
-    text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
+    text-decoration: none;
+    cursor: pointer;
 }
 .toggle{
     position: relative;
@@ -80,11 +81,13 @@ header ul li {
 header ul li a {
     position: relative;
     color: #fff;
+    font-size: 1.1em;
     margin: 0 15px;
     text-decoration: none;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 500;
     transition: 0.6s;
+    font-family: 'Open Sans', sans-serif;
 }
 header.sticky{
     padding: 10px 100px;
@@ -92,7 +95,7 @@ header.sticky{
     box-shadow: 0px 1px 5px gray;
     z-index: 10000;
 }
-header.sticky ul li a ,header.sticky .logo{
+header.sticky ul li a ,#header.sticky #logo{
     color: #7E7E7E;
 }
 header.sticky .toggle:after,header.sticky .toggle:before{
