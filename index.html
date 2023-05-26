@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/styles/About.css">
     <link rel="stylesheet" href="assets/styles/Service.css">
     <link rel="stylesheet" href="assets/styles/Skills.css">
+    <link rel="stylesheet" href="assets/styles/Education.css ">
     <link rel="stylesheet" href="assets/styles/Footer.css">
 
     <link rel="stylesheet" href="assets/styles/Project.css">
@@ -120,8 +121,17 @@
                     I am particularly passionate about the cutting-edge field of
                     web and mobile app development.</p>
             </div>
+            <div class="about-circle-container ">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+                <div class="circle-4"></div>
+            </div>
             <div data-aos="zoom-out-left" class="img-box">
-
+                <div class="img-card">
+                    <div class="filter">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -172,7 +182,6 @@
         </div>
     </section>
     <!--   skills -->
-
     <section class="skills">
         <div class="skills-header-box">
             <h1 class="skills-header">My Skills</h1>
@@ -199,9 +208,9 @@
             </div>
             <div class="hidden-bar">
                 <div class="info">
-                    <span>Java</span>
+                    <span>React</span>
                 </div>
-                <div class="progress-line java"><span></span></div>
+                <div class="progress-line react"><span></span></div>
             </div>
             <div class="hidden-bar">
                 <div class="info">
@@ -233,14 +242,21 @@
                 <i class="fa-brands fa-figma" style="color: #0702f7;"></i>
                 <i class="fa-brands fa-html5" style="color: #00b3b0;"></i>
                 <i class="fa-brands fa-vuejs" style="color: #fa3e00;"></i>
-                <i class="fa-brands fa-css3-alt" style="color: #4900d1;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #bd0000;"></i>
             </div>
         </div>
     </section>
 
     <!--    education-->
-    <section class="edu">
-
+    <section class="education">
+        <div class="edu-header-box">
+            <h1 class="edu-header">Education</h1>
+        </div>
+        <div class="edu-content">
+            <div class="edu-line"></div>
+            <span class="text first-text">2019&nbsp; </span>
+            <span class="text second-text"></span>
+        </div>
     </section>
 
     <!--    activities-->
@@ -518,55 +534,13 @@
     </section>
 
     <script src="assets/lib/jquery-3.6.4.min.js"></script>
+    <script src="assets/script/Navigation.js"></script>
     <script src="assets/script/ProjectScript.js"></script>
 
+    <script src="assets/script/Skills.js"></script>
+    <script src="assets/script/Education.js"></script>
+
     <script type="text/javascript">
-
-        window.addEventListener("scroll", function () {
-            let header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-
-        /*var lastScrollTop = 0;
-        navbar = document.getElementById("navbar");
-        window.addEventListener("scroll", function () {
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) {
-                navbar.style.top = "-60px";
-            } else {
-                if(scrollTop < lastScrollTop){
-                    navbar.style.top = "-60px";
-                }
-                navbar.style.top = "0"
-            }
-            lastScrollTop = scrollTop;
-        })*/
-
-        function toggle() {
-            const sec = document.getElementById('section');
-            const head = document.getElementById('header');
-            const nav = document.getElementById('navigation');
-            sec.classList.toggle('active');
-            head.classList.toggle('active');
-            nav.classList.toggle('active');
-        }
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                console.log(entry);
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('bar');
-                } else {
-                    entry.target.classList.remove('bar');
-                }
-            });
-        });
-
-        const hiddenElement = document.querySelectorAll('.hidden-bar');
-
-        hiddenElement.forEach((el) => observer.observe(el));
-
-        /////////////////////////////////////////////////////////////////////////
 
 
     </script>

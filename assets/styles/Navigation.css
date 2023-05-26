@@ -92,7 +92,8 @@ header ul li a {
 header.sticky{
     padding: 10px 100px;
     background-color: #fff;
-    box-shadow: 0px 1px 5px gray;
+    /*background: linear-gradient(to right, #414345 50%, #414345 50%, #232526);*/
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 10000;
 }
 header.sticky ul li a ,#header.sticky #logo{

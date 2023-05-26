@@ -2,7 +2,6 @@
     padding: 0 100px;
     text-align: center;
 }
-
 .skills-content{
     width: 100%;
     padding: 50px 200px 50px 200px;
@@ -15,7 +14,7 @@
     font-size: 4.5rem;
     letter-spacing: 2px;
     font-weight: bolder;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     position: relative;
 }
 .skills-content .bar{
@@ -27,7 +26,9 @@
 }
 .skills-content .bar .info span{
     font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
     opacity: 0;
     animation: showText 0.5s 1s forwards;
 }
@@ -43,18 +44,18 @@
     position: relative;
     height: 15px;
     width: 100%;
-    background: #f0f0f0;
+    background: rgb(104, 109, 118);
     border-radius: 10px;
     transform: scaleX(0);
     transform-origin: left;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
-    0 1px rgba(255, 255, 255, 0.8);
+    0 1px rgba(255, 255, 255, 0.3);
     animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
 }
 .bar .progress-line span{
     height: 100%;
     width: 80%;
-    background: #6665ee;
+    /*background: #6665ee;*/
     position: absolute;
     border-radius: 10px;
     transform: scaleX(0);
@@ -68,35 +69,36 @@
 }
 .progress-line.java span{
     width: 95%;
-    background: #2C87F1;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    /*background:rgba(73, 197, 182, 0.8);*/
 }
 .progress-line.javafx span{
     width: 85%;
-    background: #5098EC;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
 .progress-line.figma span{
     width: 75%;
-    background: #79B1F4;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
-.progress-line.java span{
+.progress-line.react span{
     width: 95%;
-    background: #2C87F1;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
 .progress-line.sql span{
     width: 75%;
-    background: #82BBFF;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
 .progress-line.html span{
     width: 98%;
-    background: #006EEE;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
 .progress-line.css span{
     width: 95%;
-    background: #2C87F1;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
 .progress-line.javascript span{
     width: 95%;
-    background: #2C87F1;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
 }
 .bar .progress-line span::before{
     /*position: absolute;
@@ -116,10 +118,10 @@
     position: absolute;
     content: "";
     right: 0;
-    top: 0;
+    top: 2px;
     bottom: 0;
     margin: auto;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 10px;
     font-weight: 400;
     padding: 1px 8px;
@@ -141,7 +143,7 @@
 .progress-line.figma span::after{
     content: "75%";
 }
-.progress-line.java span::after{
+.progress-line.react span::after{
     content: "95%";
 }
 .progress-line.sql span::after{
@@ -161,11 +163,14 @@
     padding: 20px;
 }
 .skills-img-box i{
-    font-size: 2.2rem;
-    /*color: #D7385E;*/
+    font-size: 1rem;
 }
 .skills-img-box.bar i{
+    font-size: 2.2rem;
     padding: 10px;
+    margin: 10px;
     opacity: 0;
+    border-radius: 10px;
     animation: showText2 0.5s 1.5s forwards;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
