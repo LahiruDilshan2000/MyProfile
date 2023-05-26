@@ -17,3 +17,11 @@ window.addEventListener("scroll", function () {
     }
     lastScrollTop = scrollTop;
 })*/
+function toggle() {
+    const sec = document.getElementById('section');
+    const head = document.getElementById('header');
+    const nav = document.getElementById('navigation');
+    sec.classList.toggle('active');
+    head.classList.toggle('active');
+    nav.classList.toggle('active');
+}

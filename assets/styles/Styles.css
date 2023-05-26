@@ -20,6 +20,70 @@ main{
 div, section{
     /*border: 2px solid black;*/
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 1230px) {
 
+    #header .toggle{
+        display: block;
+    }
+    #header nav ul{
+        display: none;
+    }
+    #about:after{
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 1050px) {
+    .intro .intro-content{
+        padding-left: 100px;
+        padding-right: 10px;
+    }
+}
+@media all and (max-width: 900px) {
+    #about:after{
+        font-size: 5rem;
+        width: 80%;
+        right: -550px;
+        top : -100px;
+    }
+}
+
+@media all and (max-width: 805px) {
+
+    #section .intro{
+        flex-direction: column;
+    }
+    .intro .intro-content{
+        width: 100%;
+        padding: 50px;
+
+    }
+    .intro .intro-head{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .about .shadow{
+        flex-direction: column;
+    }
+    #about{
+        padding: 0 50px;
+        background: linear-gradient(to right, #414345, #232526);
+    }
+    #about .shadow .content-box{
+        width: 100%;
+    }
+    #about:after{
+        right: -600px;
+        top :-80px;
+        z-index: 20;
+    }
+    #about .img-box{
+        width: 100%;
+        background:  #49c5b6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 20px 20px;
+        z-index: 20;
+    }
 }
