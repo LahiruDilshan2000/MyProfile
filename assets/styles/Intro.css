@@ -32,6 +32,7 @@
     transform: skewX(35deg);
     transition: 0s;
     opacity: 0;
+    z-index: 300;
     animation: animation1 4s linear infinite;
 }
 @keyframes animation1 {
@@ -240,6 +241,7 @@
         opacity: 0.6;
         width: 20px;
         height: 30px;
+        left: 30px;
     }
 }
 .circle-4:after{
