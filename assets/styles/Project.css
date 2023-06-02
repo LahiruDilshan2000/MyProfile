@@ -1,5 +1,5 @@
 .project{
-    padding: 100px;
+    padding: 100px 50px;
     text-align: center;
     background: linear-gradient(150deg, #49c5b6, #69CEC2);
 }
@@ -13,7 +13,7 @@
 .p-box{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 60px;
@@ -22,7 +22,7 @@
     position: relative;
     width: 350px;
     height: 250px;
-    margin: 50px 20px;
+    margin: 50px 35px;
 }
 .p-card, .p2-card, .p3-card{
     position: absolute;

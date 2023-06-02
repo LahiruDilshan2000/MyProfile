@@ -11,7 +11,9 @@ html{
 main{
     transition: 0.5s;
     overflow: hidden;
-    background: linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgb(15 23 42) 50%);
+    /*background: linear-gradient(to right, #414345, #232526);*/
+    /*background-color: rgb(15 23 42);*/
 }
 #section{
    z-index: -50;
@@ -20,23 +22,47 @@ main{
 div, section{
     /*border: 2px solid black;*/
 }
-@media all and (max-width: 1230px) {
+@media all and (max-width: 1370px){
+    .footer .f-container > div {
+        width: 350px;
+        height: 300px;
+    }
+    .footer .f-c-2-content p {
+        padding: 20px
+    }
+    .footer .footer-content h3 {
+        font-size: 0.8em;
+    }
+}
+@media all and (max-width: 1230px) /*and (min-width: 1050px)*/ {
 
-    #header .toggle{
+    #header .toggle {
         display: block;
     }
-    #header nav ul{
+
+    #header nav ul {
         display: none;
     }
-    #about:after{
+
+    #about:after {
         width: 50%;
     }
-    .skills .skills-content{
+
+    .skills .skills-content {
         padding: 50px 100px;
+    }
+
+    .footer .f-c-4 {
+        justify-content: center;
+    }
+    .footer .f-c-4 div {
+        width: 320px;
     }
 }
 
-@media all and (max-width: 1050px) {
+
+@media all and (max-width: 1067px) /*and (min-width: 900px)*/{
+
     .intro .intro-content{
         padding-left: 100px;
         padding-right: 10px;
@@ -44,8 +70,37 @@ div, section{
     .skills .skills-content{
         padding: 50px 80px;
     }
+    .footer .f-container > div {
+        width: 300px;
+    }
+    .footer .f-c-2-content p {
+        padding: 10px;
+        font-size: 0.75em;
+    }
+    .footer .footer-content h3 {
+        font-size: 0.7em;
+        margin: 0;
+        padding-right: 10px;
+    }
 }
-@media all and (max-width: 900px) {
+@media all and (max-width: 917px){
+
+    .footer .f-c-2:before {
+        display: none;
+    }
+    .footer .f-container .f-c-3{
+        display: none;
+    }
+    .footer .f-c-3 h1 {
+        margin: 0;
+    }
+    .footer .footer-content h3 {
+        font-size: 0.7em;
+        margin: 0;
+        padding-right: 5px;
+    }
+}
+@media all and (max-width: 900px) /*and (min-width: 805px)*/ {
     #about:after{
         font-size: 5rem;
         width: 80%;
@@ -55,9 +110,12 @@ div, section{
     .skills .skills-content{
         padding: 50px 50px;
     }
+    #section .service{
+        padding: 100px 50px;
+    }
 }
 
-@media all and (max-width: 805px) {
+@media all and (max-width: 805px) /*and (min-width: 435px)*/ {
 
     #section .intro{
         flex-direction: column;
@@ -65,7 +123,6 @@ div, section{
     .intro .intro-content{
         width: 100%;
         padding: 50px;
-
     }
     .intro .intro-head{
         width: 100%;
@@ -75,8 +132,7 @@ div, section{
         flex-direction: column;
     }
     #about{
-        padding: 0 50px;
-        background: linear-gradient(to right, #414345, #232526);
+        padding: 0 20px;
     }
     #about .shadow .content-box{
         width: 100%;
@@ -98,19 +154,80 @@ div, section{
     .skills .skills-content{
         padding: 50px 0px;
     }
+
+    .about .about-heading {
+        font-size: 3.5em;
+    }
+    .service .service-header, .skills .skills-header  {
+        font-size: 3.4em;
+    }
+    .footer .f-c-4 div:first-child {
+        width: 280px;
+    }
+}
+@media all and (max-width: 616px){
+
+    .footer .f-container .f-c-1{
+        width: 100%;
+        height: 250px;
+        padding: 20px 0 0 0;
+    }
+    .footer .f-container .f-c-2{
+        width: 70%;
+        height: 230px;
+        padding: 0;
+    }
+    .footer .f-c-2-content #mail {
+        padding: 10px 20px;
+        margin: 10px;
+    }
+
+    .footer .f-c-1:before {
+        width: 90%;
+        height: 1px;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+@media all and (max-width: 600px) {
+
+    .service .service-header, .skills .skills-header  {
+        font-size: 3.1em;
+    }
+    #section .skills{
+        padding: 0 50px;
+    }
+    .skills .skills-img-box.bar i {
+        font-size: 1.6em;
+        margin: 5px;
+    }
+    #section .project{
+        padding: 20px 0px;
+    }
+    .project .p-header {
+        font-size: 2.8em;
+        padding-left: 10px;
+    }
+    .project .p-c-container, .project .p2-c-container, .project .p3-c-container{
+        margin: 50px 0;
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 435px) {
 
     #section .intro{
         border-radius: 0 0 10px 10px;
+
     }
     #section .intro-head{
-        margin-top: 200px;
+        margin-top: 100px;
         text-align: start;
     }
     .intro .intro-head h1{
-        font-size: 3em;
+        font-size: 3.5em;
         padding-left: 10px;
     }
     .intro .intro-head .intro-head-content h3{
@@ -161,4 +278,31 @@ div, section{
         width: 300px;
         height: 300px;
     }
+    #about:after{
+        display: none;
+    }
+    #section .service {
+        padding: 100px 20px;
+    }
+    .service .s-card{
+        margin: 20px 0;
+    }
+    #section .skills{
+        padding: 0 20px;
+    }
+    .skills .skills-img-box.bar i {
+        font-size: 1.6em;
+        margin: 2px;
+    }
+    .about .about-circle-container{
+        bottom: -120px;
+    }
+    .about-circle-container .circle-4:after {
+        top: 120px !important;
+        width: 100px;
+    }
+    .about-circle-container .circle-4:before {
+        top: 120px !important;
+    }
+
 }

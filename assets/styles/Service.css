@@ -2,7 +2,8 @@
     padding: 100px;
     text-align: center;
     min-height: 100vh;
-    background: linear-gradient(to right, #414345, #232526);
+    /*background: linear-gradient(to right, #414345, #232526);*/
+    background-color: rgb(15 23 42);
 }
 .service-header{
     text-align: start;
@@ -96,6 +97,10 @@
     left: -75px;
     border-radius: 50%;
     top: calc(50% - 75px);
+    /*opacity: 0;*/
+}
+.s-card:hover{
+    box-shadow: none;
 }
 .s-card .s-card-content{
     text-align: left;
@@ -106,23 +111,34 @@
     padding: 20px;
 }
 .s-card .s-card-content h3{
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 1em;
     margin: 10px 0 0 0;
-    font-weight: 500;
-    color: #49c5b6;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.s-card .s-card-content h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em;
+    margin: 10px 0 0 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
 }
 .s-card .s-card-content p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 0.78em;
+    letter-spacing: 1px;
     font-weight: 300;
     margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
 }
 .s-card .s-card-content p:last-child{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.8em;
-    font-weight: bolder;
-    margin-top: 20px;
-    color: #ff1414;
-    opacity: 0.7;
+    font-size: 0.75em;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: rgba(255, 20, 20, 1);
 }
