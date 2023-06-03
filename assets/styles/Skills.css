@@ -11,8 +11,8 @@
 .skills-header{
     font-family: 'Open Sans', sans-serif;
     text-align: end;
-    font-size: 4.5rem;
-    letter-spacing: 2px;
+    font-size: 4.3rem;
+    letter-spacing: 5px;
     font-weight: bolder;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
@@ -25,9 +25,10 @@
     margin-top: 0;
 }
 .skills-content .bar .info span{
-    font-size: 14px;
+    font-size: 0.78em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    letter-spacing: 2px;
     color: rgba(255, 255, 255, 0.9);
     opacity: 0;
     animation: showText 0.5s 1s forwards;
@@ -121,9 +122,10 @@
     top: 2px;
     bottom: 0;
     margin: auto;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 10px;
-    font-weight: 400;
+    letter-spacing: 2px;
+    font-weight: 300;
     padding: 1px 8px;
     border-radius: 3px;
     opacity: 0;
