@@ -82,27 +82,45 @@ header ul li {
 
 header ul li a {
     position: relative;
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     font-size: 1.1em;
-    margin: 0 15px;
+    /*margin: 0 15px;*/
     text-decoration: none;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: lighter;
     transition: 0.6s;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /*border: 2px solid #fff;*/
+    padding: 0 20px;
+}
+header ul li a:before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: #49c5b6;
+    bottom: -5px;
+    left: 4px;
+    transition: all 0.5s;
+}
+header.sticky ul li a:hover:before {
+    width: 90%;
+}
+header.sticky  ul li a:hover{
+    color: white;
 }
 header.sticky{
-    padding: 10px 100px;
-    background-color: #fff;
+    padding: 20px 100px;
+    background-color: rgb(15 23 42);
     /*background: linear-gradient(to right, #414345 50%, #414345 50%, #232526);*/
     box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 10000;
 }
 header.sticky ul li a ,#header.sticky #logo{
-    color: #7E7E7E;
+    color: rgba(255, 255, 255, 0.6);
 }
 header.sticky .toggle:after,header.sticky .toggle:before{
-    background: #7E7E7E;
+    /*background: #7E7E7E;*/
 }
 i{
     color: #fff;
@@ -115,9 +133,8 @@ i{
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: #232526;
-    background: -webkit-linear-gradient(to right, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526);
+    background: rgba(0, 0, 0, 1);
+
     display: grid;
     place-items: center;
     transition: 0.5s;
@@ -157,13 +174,13 @@ i{
     z-index: 2000000;
 }
 #navigation ul li a{
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     display: inline-block;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: lighter;
     letter-spacing: 1px;
-    /*background: #0a53be;*/
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
     overflow: hidden;

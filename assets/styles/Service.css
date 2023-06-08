@@ -13,24 +13,7 @@
     color: rgba(255, 255, 255, 0.7);
     position: relative;
 }
-.service-header:before{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #49c5b6;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    opacity: 0.8;
-    animation: lineAnimation 1s ease-out infinite;
-}
-@keyframes lineAnimation {
-    100%{
-        width: 50%;
-    }
-}
+
 .service-box{
     width: 100%;
     display: flex;
@@ -46,7 +29,7 @@
     width: 360px;
     height: 210px;
     color: rgba(255, 255, 255, 0.8);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 20px;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -97,7 +80,6 @@
     left: -75px;
     border-radius: 50%;
     top: calc(50% - 75px);
-    /*opacity: 0;*/
 }
 .s-card:hover{
     box-shadow: none;
@@ -111,7 +93,7 @@
     padding: 20px;
 }
 .s-card .s-card-content h3{
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     margin: 10px 0 0 0;
     font-weight: 300;
@@ -119,7 +101,7 @@
     color: rgba(255, 255, 255, 0.8);
 }
 .s-card .s-card-content h4{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.85em;
     margin: 10px 0 0 0;
     font-weight: 300;
@@ -127,7 +109,7 @@
     color: rgba(255, 255, 255, 0.7);
 }
 .s-card .s-card-content p{
-    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     font-size: 0.78em;
     letter-spacing: 1px;
     font-weight: 300;
@@ -135,10 +117,10 @@
     color: rgba(255, 255, 255, 0.5);
 }
 .s-card .s-card-content p:last-child{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.75em;
     font-weight: 500;
     margin-top: 10px;
     letter-spacing: 2px;
-    color: rgba(255, 20, 20, 1);
+    color: #7158e2;
 }

@@ -1,71 +1,107 @@
-.education{
+.education {
+    width: 100%;
     padding: 100px;
-    min-height: 100vh;
-    /*background: linear-gradient(to right, #414345, #232526);*/
     background-color: rgb(15 23 42);
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
-.edu-header{
-    text-align: start;
-    font-size: 6rem;
-    margin-left: -100px;
-    letter-spacing: 2px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.7);
-    /*border: 2px solid #fff;*/
-    transform: rotate(270deg);
-}
-.edu-content{
-    /*border: 2px solid #fff;*/
-    min-height: 80vh;
-    position: relative;
+
+.edu-pic {
+    width: 40%;
+    height: 500px;
     display: flex;
-    width: 650px;
     align-items: center;
-    justify-content: start;
-    padding-left: 80px;
-    background: linear-gradient(to right, #232526, #232526);
-    overflow: hidden;
-}
-.edu-content .edu-line{
-    position: absolute;
-    width: 2px;
-    height: 80%;
-    left: 50px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #49c5b6;
-}
-.edu-content .text{
-    position: relative;
-    color: red;
-    font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-}
-.edu-content .text.first-text{
-    color: rgba(255,255, 255, 1);
-}
-.edu-content .text.second-text:before{
-    content: "";
-    position: absolute;
-    top: 1px;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #232526;
-    border-left: 2px solid #49c5b6;
-    animation: typeAnimation 4s steps(16) infinite;
-}
-@keyframes typeAnimation {
-    40%,60%{
-        left: calc(100% + 4px );
-    }
-    100%{
-        left: 0%;
-    }
+    justify-content: center;
 
 }
+
+.edu-pic div {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    /*mix-blend-mode: soft-light;*/
+}
+.edu-pic  img{
+    margin-top: 25px;
+    width: 80%;
+}
+.edu-container {
+    width: 60%;
+    padding: 20px;
+}
+
+.edu-container h1 {
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.edu-container p {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.edu-card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.edu-card-container .edu-card {
+    width: 200px;
+    height: 250px;
+    background: #282B64;
+    margin: 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+}
+
+.edu-card-container .edu-card:hover {
+    transform: scale(1.04);
+}
+
+.edu-card i {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 1.8em;
+    background: #ed213a;
+    border-radius: 10px;
+}
+
+.edu-card:nth-child(2) i {
+    background: #10ac84;
+}
+
+.edu-card:nth-child(3) i {
+    background: #7158e2;
+}
+
+.edu-card h4 {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.edu-card p {
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75em;
+}
+

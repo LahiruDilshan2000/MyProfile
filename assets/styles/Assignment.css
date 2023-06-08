@@ -1,0 +1,92 @@
+.assignment{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, transparent 40%, #282B64 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.asg-header{
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    position: relative;
+
+}
+.asg-header h1{
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+.asg-header h2{
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+#my-Repo{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 50px;
+    border: 2px solid #49c5b6;
+    /*background: #00a7b3;*/
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    z-index: 20;
+    overflow: hidden;
+}
+#my-Repo span{
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #49c5b6;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+#my-Repo:hover span{
+    width: 100%;
+}
+.asg-container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.asg-container .asg-card{
+    width: 180px;
+    height: 180px;
+    background: #282B64;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    margin: 15px 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+.asg-container .asg-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+.asg-card p{
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 22px;
+}

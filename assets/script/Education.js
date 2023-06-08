@@ -1,3 +1,4 @@
+/*
 const text = document.querySelector(".second-text");
 
 const textLoad = () => {
@@ -12,4 +13,4 @@ const textLoad = () => {
     },8100)
 }
 textLoad();
-setInterval(textLoad, 12100);
+setInterval(textLoad, 12100);*/

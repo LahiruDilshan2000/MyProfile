@@ -26,14 +26,14 @@
     color: rgba(255, 255, 255, 0.8);
 }
 .about-p1{
-    /*font-family: 'Open Sans', sans-serif;*/
+
+    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     margin-bottom: 30px;
     letter-spacing: 1px;
     line-height: 27px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.6);
-    /*color: #49c5b6;*/
 }
 #me{
     color: orange;
@@ -42,10 +42,10 @@
     color: orangered;
 }
 .about-p2{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 27px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 28px;
     font-size: 1.01em;
-    font-weight: 300;
+    /*font-weight: 300;*/
     letter-spacing: 1px;
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.4);
