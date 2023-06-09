@@ -1,33 +1,53 @@
 .service {
-    padding: 100px;
+    /*padding: 100px;*/
+    width: 100%;
     text-align: center;
-    min-height: 100vh;
-    /*background: linear-gradient(to right, #414345, #232526);*/
     background-color: rgb(15 23 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.service-header{
-    text-align: start;
-    font-size: 4rem;
-    letter-spacing: 2px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.7);
+
+.service-pic {
+    width: 50%;
+    height: 500px;
+    background: url("/assets/images/AdobeStock_561576214.jpeg");
+    background-size: cover;
     position: relative;
 }
 
-.service-box{
-    width: 100%;
+.service-header-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: linear-gradient(100deg, rgb(15 23 42) 10%, transparent, rgb(15 23 42) 70%);
+    text-align: start;
+}
+
+.service-header {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.service-box {
+    width: 50%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 60px;
-    /*padding: 0px 90px;*/
     position: relative;
-    justify-content:  center;
+    justify-content: center;
 }
-.s-card{
+
+.s-card {
     position: relative;
-    width: 360px;
-    height: 210px;
+    width: 250px;
+    height: 200px;
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Roboto', sans-serif;
     margin: 20px;
@@ -35,7 +55,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
 }
-.s-card .s-card-img{
+
+.s-card .s-card-img {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -53,38 +74,45 @@
     transition: 0.5s ease-in-out;
     backdrop-filter: blur(20px);
 }
-.s-card .s-card-img i{
-    font-size: 4em;
+
+.s-card .s-card-img i {
+    font-size: 3em;
 }
-.s-card .s-card-img .fa-battle-net{
+
+.s-card .s-card-img .fa-battle-net {
     background-color: #ff1414;
     background-image: linear-gradient(45deg, #ff1414 0%, #d68476 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.s-card .s-card-img .fa-react{
+
+.s-card .s-card-img .fa-react {
     background-color: #74ebd5;
     background-image: linear-gradient(45deg, #74ebd5 0%, #9face6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.s-card .s-card-img .fa-laravel{
+
+.s-card .s-card-img .fa-laravel {
     background-color: #ff1414;
     background-image: linear-gradient(45deg, #ff1414 0%, #d68476 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.s-card:hover .s-card-img{
-    width: 150px;
-    height: 150px;
+
+.s-card:hover .s-card-img {
+    width: 120px;
+    height: 120px;
     left: -75px;
     border-radius: 50%;
     top: calc(50% - 75px);
 }
-.s-card:hover{
+
+.s-card:hover {
     box-shadow: none;
 }
-.s-card .s-card-content{
+
+.s-card .s-card-content {
     text-align: left;
     position: absolute;
     right: 0;
@@ -92,7 +120,8 @@
     height: 100%;
     padding: 20px;
 }
-.s-card .s-card-content h3{
+
+.s-card .s-card-content h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     margin: 10px 0 0 0;
@@ -100,7 +129,8 @@
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.8);
 }
-.s-card .s-card-content h4{
+
+.s-card .s-card-content h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 0.85em;
     margin: 10px 0 0 0;
@@ -108,7 +138,8 @@
     letter-spacing: 2px;
     color: rgba(255, 255, 255, 0.7);
 }
-.s-card .s-card-content p{
+
+.s-card .s-card-content p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.78em;
     letter-spacing: 1px;
@@ -116,7 +147,8 @@
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.5);
 }
-.s-card .s-card-content p:last-child{
+
+.s-card .s-card-content p:last-child {
     font-family: 'Roboto', sans-serif;
     font-size: 0.75em;
     font-weight: 500;
