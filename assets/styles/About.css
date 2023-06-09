@@ -119,23 +119,3 @@
     display: flex;
     z-index: 2;
 }
-.about-circle-container .circle-1:after{
-    top: 40px;
-}
-.about-circle-container .circle-4{
-    background: transparent;
-}
-.about-circle-container .circle-3{
-    background: none;
-    border-top: 2px dotted rgba(255, 255, 255, 1);
-}
-.about-circle-container .circle-4:after{
-    top: 150px;
-}
-.about-circle-container .circle-4:before{
-    top: 150px;
-}
-.about-circle-container  .circle-3:after {
-    top: 23px;
-}
-

@@ -112,13 +112,13 @@
 .asg-card a {
     width: 35px;
     height: 35px;
-    border: 2px solid orangered;
+    border: 2.5px solid orangered;
     background: transparent;
     border-radius: 50%;
     position: absolute;
     margin: auto;
     left: 0;
-    bottom: 10px;
+    bottom: -12px;
     padding: 6px;
     transition: ease-in-out 0.5s;
     transition-delay: 0.2s;
@@ -150,4 +150,8 @@
 
 .asg-card a:hover span {
     width: 100%;
+}
+
+.asg-card:last-child i {
+    margin-top: 75px;
 }
