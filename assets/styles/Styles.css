@@ -23,6 +23,7 @@ div, section{
     /*border: 2px solid black;*/
 }
 @media all and (max-width: 1370px){
+
     .footer .f-container > div {
         width: 350px;
         height: 300px;
@@ -58,6 +59,9 @@ div, section{
     .footer .f-c-4 div {
         width: 320px;
     }
+    #section .education{
+        padding: 50px;
+    }
 }
 
 
@@ -82,6 +86,23 @@ div, section{
         margin: 0;
         padding-right: 10px;
     }
+    #section .assignment{
+        padding: 20px;
+    }
+}
+@media all and (max-width: 950px){
+
+    #section .education{
+        flex-direction: column-reverse;
+    }
+    .education .edu-pic{
+        width: 100%;
+    }
+    .education .edu-container{
+        width: 100%;
+        padding: 0;
+    }
+
 }
 @media all and (max-width: 917px){
 
@@ -110,11 +131,29 @@ div, section{
     .skills .skills-content{
         padding: 50px 50px;
     }
-    #section .service{
-        padding: 100px 50px;
+}
+@media all and (max-width: 824px){
+
+    #section .assignment{
+        flex-direction: column;
+    }
+    .assignment .asg-header{
+        width: 100%;
+        text-align: start;
+        padding-bottom: 20px;
+        height: auto;
+    }
+    .assignment .asg-header h2{
+        margin: 0;
+    }
+    .assignment .asg-header #my-Repo{
+        right: 10px;
+        padding-left: 40px;
+    }
+    .assignment .asg-container{
+        width: 100%;
     }
 }
-
 @media all and (max-width: 805px) /*and (min-width: 435px)*/ {
 
     #section .intro{
@@ -158,11 +197,19 @@ div, section{
     .about .about-heading {
         font-size: 3.5em;
     }
-    .service .service-header, .skills .skills-header  {
-        font-size: 3.4em;
-    }
     .footer .f-c-4 div:first-child {
         width: 280px;
+    }
+    #section .service {
+        flex-direction: column-reverse;
+    }
+    .service .service-pic {
+        width: 100%;
+        height: 300px;
+    }
+    .service .service-box {
+        width: 100%;
+       margin-top: 0;
     }
 }
 @media all and (max-width: 616px){
@@ -193,7 +240,7 @@ div, section{
 }
 @media all and (max-width: 600px) {
 
-    .service .service-header, .skills .skills-header  {
+     .skills .skills-header  {
         font-size: 3.1em;
     }
     #section .skills{
@@ -215,7 +262,18 @@ div, section{
         width: 90%;
     }
 }
+@media all and (max-width: 517px) {
 
+    .assignment .asg-container  div:nth-child(6){
+        display: none;
+    }
+}
+@media all and (max-width: 455px) {
+
+    .project .p-card, .project .p2-card, .project .p3-card{
+        width: 380px;
+    }
+}
 @media all and (max-width: 435px) {
 
     #section .intro{
@@ -281,9 +339,6 @@ div, section{
     #about:after{
         display: none;
     }
-    #section .service {
-        padding: 100px 20px;
-    }
     .service .s-card{
         margin: 20px 0;
     }
@@ -294,15 +349,7 @@ div, section{
         font-size: 1.6em;
         margin: 2px;
     }
-    .about .about-circle-container{
-        bottom: -120px;
+    .project .p-card, .project .p2-card, .project .p3-card{
+        width: 350px;
     }
-    .about-circle-container .circle-4:after {
-        top: 120px !important;
-        width: 100px;
-    }
-    .about-circle-container .circle-4:before {
-        top: 120px !important;
-    }
-
 }

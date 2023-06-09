@@ -38,9 +38,11 @@
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.1em;
     font-family: 'Roboto', sans-serif;
-    padding: 10px 50px;
+    width: 150px;
+    height: 50px;
+    padding-top: 14px;
+    border-radius: 30px;
     border: 2px solid #49c5b6;
-    /*background: #00a7b3;*/
     position: absolute;
     bottom: 0;
     background: transparent;
@@ -124,12 +126,14 @@
     transition-delay: 0.2s;
     opacity: 0;
     z-index: 20;
-    overflow: hidden;
 }
 
 .asg-card a i {
-    font-size: 1.2em;
+    font-size: 0;
     margin: 0;
+    transition: all 0.3s;
+    transition-delay: 0.7s;
+    transform: translateX(-60px);
 }
 
 .asg-card:hover a {
@@ -137,19 +141,28 @@
     opacity: 1;
 }
 
+.asg-card:hover a i{
+    font-size: 1.1em;
+    transform: translateX(0px);
+}
 .asg-card a span {
     width: 0%;
-    height: 100%;
+    height: 0%;
     background: orangered;
     position: absolute;
+    border-radius: 50%;
     z-index: -1;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     transition: ease-in-out 0.3s;
 }
 
 .asg-card a:hover span {
     width: 100%;
+    height: 100%;
 }
 
 .asg-card:last-child i {
