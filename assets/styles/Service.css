@@ -11,7 +11,7 @@
 .service-pic {
     width: 50%;
     height: 500px;
-    background: url("/assets/images/AdobeStock_561576214.jpeg");
+    background: url("/assets/images/AdobeStock561576214.jpeg");
     background-size: cover;
     position: relative;
 }

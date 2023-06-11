@@ -88,7 +88,7 @@
 
 .asg-container .asg-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .asg-card i {
