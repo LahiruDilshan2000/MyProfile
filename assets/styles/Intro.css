@@ -224,7 +224,17 @@
     left: 20px;
     animation: animationCircle4 1s alternate-reverse infinite;
 }
-/*@keyframes animationCircle3 {
+.circle-4:after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    opacity: 0.8;
+}
+@keyframes animationCircle3 {
     100%{
         transform: translateX(45px);
     }
@@ -237,24 +247,14 @@
     }
     100%{
         transform: translateY(45px);
-        !*background-color: red;*!
+        /*background-color: red;*/
         opacity: 0.6;
         width: 20px;
         height: 30px;
         left: 30px;
     }
-}*/
-.circle-4:after{
-    content: "";
-    width: 120px;
-    height: 1px;
-    background: #fff;
-    position: absolute;
-    top: 200px;
-    left: 20px;
-    opacity: 0.8;
 }
-/*@keyframes animationCircle1 {
+@keyframes animationCircle1 {
     0%{
         transform: rotate(0deg);
     }
@@ -269,7 +269,7 @@
     100%{
         transform: rotate(0deg);
     }
-}*/
+}
 #scroll-btn{
     position: absolute;
     width: 25px;
