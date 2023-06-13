@@ -261,6 +261,98 @@ div, section{
         margin: 50px 0;
         width: 90%;
     }
+    .pre-loader .circle-container{
+        width: 400px;
+        height: 400px;
+    }
+    .pre-loader .circle-1:after {
+        width: 48px;
+        height: 48px;
+        top: 45px;
+    }
+    .pre-loader .circle-1:before {
+        top: 140px;
+    }
+    .pre-loader .circle-2:before {
+        top: 100px;
+        right: 2px;
+    }
+    .pre-loader .circle-2:after {
+        top: 32px;
+    }
+    .pre-loader .circle-3:after {
+        width: 17px;
+        height: 17px;
+        top: 27px;
+    }
+    .pre-loader .circle-3:before {
+        top: 65px;
+        right: 2px;
+    }
+    .pre-loader .circle-4:after {
+        width: 110px !important;
+        height: 1px;
+        top: 160px !important;
+        left: 20px;
+    }
+    .pre-loader .circle-4:before {
+        top: 160px;
+        left: 20px;
+    }
+}
+@media all and (max-width: 468px) {
+
+    .pre-loader .circle-container{
+        width: 320px;
+        height: 320px;
+    }
+    .pre-loader .circle-1:after {
+        width: 40px;
+        height: 40px;
+        top: 30px;
+    }
+    .pre-loader .circle-1:before {
+        width: 10px;
+        height: 10px;
+        top: 120px;
+    }
+    .pre-loader .circle-2:before {
+        width: 8px;
+        height: 8px;
+        top: 60px;
+        right: 2px;
+    }
+    .pre-loader .circle-2:after {
+        width: 25px;
+        height: 25px;
+        top: 20px;
+    }
+    .pre-loader .circle-3:after {
+        width: 15px;
+        height: 15px;
+        top: 20px;
+    }
+    .pre-loader .circle-3:before {
+        width: 8px;
+        height: 8px;
+        top: 52px;
+        right: 2px;
+    }
+    .pre-loader .circle-4:after {
+        width: 100px !important;
+        height: 1px;
+        top: 120px !important;
+        left: 20px;
+    }
+    .pre-loader .circle-4:before {
+        top: 120px;
+        left: 20px;
+        width: 15px;
+        height: 15px;
+        animation: animationCircle44 1s alternate-reverse infinite !important;
+    }
+
+
 }
 @media all and (max-width: 517px) {
 

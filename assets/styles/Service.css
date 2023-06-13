@@ -4,7 +4,7 @@
     min-height: 80vh;
     background-color: rgb(15 23 42);
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 }
 
@@ -43,6 +43,7 @@
     margin-top: 60px;
     position: relative;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .s-card {
