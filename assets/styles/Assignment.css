@@ -84,6 +84,7 @@
     transition: ease-in-out 0.5s;
     cursor: pointer;
     position: relative;
+    /*padding: 50px 20px;*/
 }
 
 .asg-container .asg-card:hover {
@@ -92,8 +93,12 @@
 }
 
 .asg-card i {
-    margin-top: 50px;
+    transition: ease-in-out 0.5s;
     font-size: 1.6em;
+    margin-top: 50px;
+}
+.asg-card:hover .icon {
+    margin-top: 40px;
 }
 
 .asg-card p {
