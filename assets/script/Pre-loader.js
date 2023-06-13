@@ -8,7 +8,7 @@ let setTime = () =>{
 setInterval(setTime,2000);
 
 $('#num-counter').text()
-/*$('#section').css({
+$('#section').css({
     display : "none"
 });
 $(document).ready(() => {
@@ -20,4 +20,4 @@ $(document).ready(() => {
             display : "block"
         });
     },6000);
-});*/
+});
