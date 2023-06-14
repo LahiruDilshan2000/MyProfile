@@ -28,7 +28,8 @@
 .edu-pic{
     height: 446px;
     width: 40%;
-    background: url("/assets/images/Annotation 2023-06-09 123356.png");
+    /*background: url("/assets/images/Annotation 2023-06-09 123356.png");*/
+    background: url("https://lahirudilshan2000.github.io/MyProfile/assets/images/Annotation 2023-06-09 123356.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

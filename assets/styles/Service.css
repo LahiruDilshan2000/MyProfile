@@ -11,7 +11,8 @@
 .service-pic {
     width: 50%;
     height: 500px;
-    background: url("/assets/images/AdobeStock561576214.png");
+    /*background: url("/assets/images/AdobeStock561576214.png");*/
+    background: url("https://lahirudilshan2000.github.io/MyProfile/assets/images/AdobeStock561576214.png");
     background-size: cover;
     position: relative;
 }
