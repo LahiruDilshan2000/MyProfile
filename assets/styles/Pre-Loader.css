@@ -46,6 +46,7 @@
     opacity: 0.8 !important;
 }
 .pre-loader .circle-1:before{
+    top: 180px;
     animation-delay: 1.5s !important;
     animation: animationCircle33 1s alternate-reverse infinite;
 }
@@ -55,10 +56,12 @@
     opacity: 0.6;
 }
 .pre-loader .circle-2:after{
+    top: 60px;
     animation-delay: 2.5s !important;
     animation: animationCircle22 3s linear infinite;
 }
 .pre-loader .circle-2:before{
+    top: 140px;
     animation-delay: 3s !important;
     animation: animationCircle33 1s alternate-reverse infinite;
 }
@@ -72,6 +75,7 @@
     animation: animationCircle22 1s linear infinite;
 }
 .pre-loader .circle-3:before{
+    top: 80px;
     animation-delay: 4.5s !important;
     animation: animationCircle3 1s alternate-reverse infinite;
 }
