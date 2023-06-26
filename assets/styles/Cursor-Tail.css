@@ -1,0 +1,10 @@
+.cursor-circle{
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
